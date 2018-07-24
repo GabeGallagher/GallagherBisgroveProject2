@@ -1,0 +1,20 @@
+Project 2 User Stories
+	- As a user I can
+		+ purchase an item
+		+ list an item for sale
+		+ search available items
+		+ add multiple items to a cart and buy them all at once
+		+ submit a complaint about a seller
+		+ create a user account
+		+ open a storefront to sell many goods
+
+	- As a Storefront I can
+		+ sell an item
+		+ view all items in my inventory
+		+ change the name of my storefront
+		+ 
+
+	- As an admin I can
+		+ suspend an account
+		+ view a complaint
+		+ view list of all complaints
