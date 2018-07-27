@@ -18,6 +18,10 @@ export class UserComponent implements OnInit {
     this.router.navigate(['complaint']);
   }
 
+  onLogout() {
+    this.router.navigate(['']);
+  }
+
   ngOnInit() {
   }
 }
