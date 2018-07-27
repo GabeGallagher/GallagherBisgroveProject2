@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Route, Router } from '@angular/router';
+=======
+>>>>>>> 5fbafc1de8a9c16e78eb38a910f47cac4bf60dd5
 
 @Component({
   selector: 'app-user',
@@ -8,6 +11,7 @@ import { Route, Router } from '@angular/router';
 })
 export class UserComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(private router: Router) { }
 
   onBrowseItem() {
@@ -24,4 +28,11 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
   }
+=======
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 5fbafc1de8a9c16e78eb38a910f47cac4bf60dd5
 }
