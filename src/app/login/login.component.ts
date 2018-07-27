@@ -12,12 +12,16 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  onClick() {
+  verifyLoginInfo() {
+    // submit username/pass from form and get whether it's in db in response
+  }
+
+  onLogin() {
     this.router.navigate(['user']);
   }
 
-  verifyLoginInfo() {
-    // submit username/pass from form and get whether it's in db in response
+  onSignUp() {
+    this.router.navigate(['registration']);
   }
 
   ngOnInit() {

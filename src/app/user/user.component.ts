@@ -10,6 +10,14 @@ export class UserComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  onBrowseItem() {
+    this.router.navigate(['item']);
+  }
+
+  onSubmitComplaint() {
+    this.router.navigate(['complaint']);
+  }
+
   ngOnInit() {
   }
 }
