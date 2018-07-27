@@ -1,3 +1,13 @@
-<p routerLink="user">
-  login works!
-</p>
+<form action="login">
+  <div>
+    <label for="inputUsername">Username:</label>
+    <input type="text" id="username">
+  </div>
+
+  <div>
+    <label for="inputPassword">Password:</label>
+    <input type="text" id="password">
+  </div>
+
+  <div><button (click)="onClick()">Login</button></div>
+</form>
