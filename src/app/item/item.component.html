@@ -1,6 +1,32 @@
 <div _ngcontent-c2>
+
+  <h1>Item Name</h1>
+
+  <div id="img">
+    <img src="assets/img/cat.jpg" alt="could not display">
+  </div>
+
+  <label for="price">Price</label>
+  <p>$ price goes here</p>
+
+  <label for="soldBy">Sold by: </label>
+  <p id="seller">seller here</p>
+
+  <label for="descriptionLabel">Description:</label>
+  <p id="description">some long description should go here and just because I want to test the formatting of entires with a lot 
+    of words and letters I am going to make a ridiculously long, run-on sentence that simply never ends because, well, why not?
+  </p>
+
+  <label for="postDate">Date Posted:</label>
+  <p>date posted goes here</p>
+
+  <label for="lastedUpdate">Update Last: </label>
+  <p>last updated goes here</p>
+
   <h2>Click button to purchase item</h2>
   <button class="btn btn-primary btn-center" (click)="onClick()">Purchase</button>
   {{clickMessage}}
-  <div><button (click)="onBack()">Back to Shop</button></div>
+
+
+  <div><button class="btn btn-primary btn-center" (click)="onBack()">Back to Shop</button></div>
 </div>
