@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { StorefrontComponent } from './storefront/storefront.component';
+import { StorefrontRegistrationComponent } from './storefront-registration/storefront-registration.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StorefrontComponent } from './storefront/storefront.component';
     LoginComponent,
     RegistrationComponent,
     ComplaintComponent,
-    StorefrontComponent
+    StorefrontComponent,
+    StorefrontRegistrationComponent
   ],
   imports: [
     BrowserModule,
