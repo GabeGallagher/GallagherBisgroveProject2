@@ -22,6 +22,10 @@ export class UserComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  onRegisterStorefront() {
+    this.router.navigate(['storefront-registration']);
+  }
+
   ngOnInit() {
   }
 }

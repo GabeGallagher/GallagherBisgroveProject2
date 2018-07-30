@@ -1,3 +1,35 @@
-<p>
-  storefront-registration works!
-</p>
+<p>Please enter shipping information for your new storefront</p>
+
+<form action="createStore">
+  <div>
+    <label for="storeName">Storefront Name:</label>
+    <input type="text" id="storeName">
+  </div>
+  
+  <div>
+    <label for="storeStreet">Street Address:</label>
+    <input type="text" id="storeStreet">
+  </div>
+
+  <div>
+    <label for="storeCity">City:</label>
+    <input type="text" id="storeCity">
+  </div>
+  
+  <div>
+    <label for="storeState">State:</label>
+    <input type="text" id="storeState">
+  </div>
+  
+  <div>
+    <label for="storeZip">Zip:</label>
+    <input type="text" id="storeZip">
+  </div>
+
+  <div><button (click)="onSubmit()">Submit</button></div>
+  {{clickMessage}}
+
+  <div><button (click) = "onGoUser()">Return to User Page</button></div>
+
+  <div><button (click) = "onGoStorefront()">Go To Storefront</button></div>
+</form>

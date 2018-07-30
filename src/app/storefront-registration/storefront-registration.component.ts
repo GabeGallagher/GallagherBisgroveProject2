@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-storefront-registration',
@@ -7,7 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StorefrontRegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  clickMessage = '';
+
+  onSubmit() {
+    this.clickMessage = 'Storefront Submitted!';
+    // Logic for inserting store object to db
+  }
+
+  onGoUser() {
+    this.router.navigate(['user']);
+  }
+
+  onGoStorefront() {
+    this.router.navigate(['storefront']);
+  }
 
   ngOnInit() {
   }

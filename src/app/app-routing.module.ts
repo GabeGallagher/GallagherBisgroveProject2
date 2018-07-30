@@ -7,6 +7,7 @@ import { ItemComponent } from './item/item.component';
 import { RegistrationComponent} from './registration/registration.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { StorefrontComponent } from './storefront/storefront.component';
+import { StorefrontRegistrationComponent } from './storefront-registration/storefront-registration.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'storefront',
     component: StorefrontComponent
+  },
+  {
+    path: 'storefront-registration',
+    component: StorefrontRegistrationComponent
   }
 ];
 
