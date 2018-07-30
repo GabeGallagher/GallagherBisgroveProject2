@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { ComplaintComponent } from './complaint/complaint.component';
+import { StorefrontComponent } from './storefront/storefront.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationComponent,
+    ComplaintComponent,
+    StorefrontComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
