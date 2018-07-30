@@ -3,10 +3,15 @@ import { CommonModule } from '@angular/common';
 import {Routes, RouterModule } from '@angular/router';
 import { ItemComponent } from './item/item.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: LoginComponent
+  },
+  {
+    path: 'user',
     component: UserComponent
   },
   {
