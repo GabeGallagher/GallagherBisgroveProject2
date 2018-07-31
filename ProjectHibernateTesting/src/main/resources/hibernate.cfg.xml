@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Conviguration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- DataSource Info -->
+		<!-- Url -->
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@mydbinstance.ck3gpnblqobc.us-east-2.rds.amazonaws.com:1521:ORCL</property>
+		<!-- Username/Password -->
+		<property name="hibernate.connection.username">mydbinstance</property>
+		<property name="hibernate.connection.password">password</property>
+		<!-- Driver -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+		<!-- Type of DB Dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<!-- Level 2 Cache 
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		 Specify Caching Provider 
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>-->
+
+		<!-- Mapped Classes -->
+		<!-- <mapping class="com.revature.pojos.HoneyPot" /> -->
+		<mapping class="com.revature.pojos.Transactions"/>
+		<mapping class="com.revature.pojos.Users"/>
+		<mapping class="com.revature.pojos.Accounts"/>
+		<mapping class="com.revature.pojos.Items"/>
+		<mapping class="com.revature.pojos.StoreFront"/>
+		<!-- <mapping class="com.revature.pojos.StoreOwners"/> -->
+		<mapping class="com.revature.pojos.Complaints"/>
+		
+		
+		<!--  For mapping with xml -->
+		<!--  <mapping resource="honeypot.hbm.xml"/> -->
+	</session-factory>
+</hibernate-configuration>
