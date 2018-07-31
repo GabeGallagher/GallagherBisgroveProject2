@@ -11,4 +11,8 @@ export class DataService {
   getAccounts() {
     return this.http.get('http://localhost:3000/ACCOUNTS');
   }
+
+  getInventory() {
+    return this.http.get('http://localhost:3000/ITEMS');
+  }
 }

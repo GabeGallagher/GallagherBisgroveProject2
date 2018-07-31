@@ -1,0 +1,43 @@
+{
+    "USERS": [
+        {
+            "ID": 1,
+            "FIRSTNAME": "Nathan",
+            "LASTNAME": "Drake",
+            "STREET": "42 Ionno Ln",
+            "CITY": "Somewhere",
+            "STATE": "NV",
+            "ZIP": 90210,
+            "EMAIL": "draken@NaughtyDog.com",
+            "ACCOUNTBALANCE": 100000
+        },
+        
+        {
+            "ID": 2,
+            "FIRSTNAME": "Jimmy",
+            "LASTNAME": "McGill",
+            "STREET": "160 Juan Tabo Blvd NE",
+            "CITY": "Albuquerque",
+            "STATE": "NM",
+            "ZIP": 87123,
+            "EMAIL": "mcgillj@mcgilljes.com",
+            "ACCOUNTBALANCE": 100000
+        }
+    ],
+
+    "ACCOUNTS": [
+        {
+            "ID": 1,
+            "USERNAME": "TheUnchartedOne",
+            "PASSWORD": "allmyfriendsaredead",
+            "ADMIN": 0
+        },
+
+        {
+            "ID": 2,
+            "USERNAME": "McGillicutty",
+            "PASSWORD": "struggle",
+            "ADMIN": 0
+        }
+    ]
+}

@@ -1,3 +1,10 @@
-<p>
-  inventory works!
-</p>
+<ul>
+  <li *ngFor="let item of inventory$">
+    <a routerLink = "/inventory/{{ITEMS.ITEMID}}">{{ITEMS.NAME}}</a>
+    <ul>
+      <li>{{ ITEMS.DESCRIPTION }}</li>
+      <li>{{ ITEMS.PRICE }}</li>
+      <li>{{ ITEMS.QUANTITY }}</li>
+    </ul>
+  </li>
+</ul>

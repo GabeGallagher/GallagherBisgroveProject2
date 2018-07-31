@@ -21,17 +21,17 @@ export class LoginComponent implements OnInit {
   }
 
   public onLogin() {
-    // this.router.navigate(['user']);
-    for (const index in this.users$) {
-      if (!this.users$.hasOwnProperty(index)) { continue; }
+    this.router.navigate(['user']);
+    // for (const index in this.users$) {
+    //   if (!this.users$.hasOwnProperty(index)) { continue; }
 
-      const obj = this.users$[index];
-      for (const prop in obj) {
-        if (!obj.hasOwnProperty) { continue; }
+    //   const obj = this.users$[index];
+    //   for (const prop in obj) {
+    //     if (!obj.hasOwnProperty) { continue; }
 
-        console.log(prop + ' = ' + obj[prop]);
-      }
-    }
+    //     console.log(prop + ' = ' + obj[prop]);
+    //   }
+    // }
   }
 
   onSignUp() {

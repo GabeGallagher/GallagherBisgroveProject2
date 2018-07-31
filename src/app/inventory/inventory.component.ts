@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-inventory',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryComponent implements OnInit {
 
-  constructor() { }
+  inventory$: Object;
+
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getInventory().subscribe(
+      data => this.inventory$ = data
+    );
   }
 
 }
